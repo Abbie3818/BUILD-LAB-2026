@@ -1,5 +1,6 @@
-- > {
-box-sizing: border-box;
+> { box-sizing: border-box; }
+body { margin: 0; }
+img { max-width: 100%; height: auto; 
 }
 
 > body {
@@ -99,4 +100,30 @@ grid-template-columns: 1fr;
   background: transparent;
   color: #111;
   border: 1px solid #e6e6e6;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+  }
+
+  .hero {
+    padding: 18px;
+  }
+
+  .section {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+}
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 0 0 10px 0;
 }
